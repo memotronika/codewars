@@ -18,7 +18,8 @@ Completing an activity that is ranked the same as that of the user's will be wor
 Completing an activity that is ranked one ranking lower than the user's will be worth 1 point
 Any activities completed that are ranking 2 levels or more lower than the user's ranking will be ignored
 Completing an activity ranked higher than the current user's rank will accelerate the rank progression. 
-The greater the difference between rankings the more the progression will be increased. The formula is 10 * d * d where d equals the difference in ranking between the activity and the user.
+The greater the difference between rankings the more the progression will be increased. 
+The formula is 10 * d * d where d equals the difference in ranking between the activity and the user.
 Logic Examples:
 If a user ranked -8 completes an activity ranked -7 they will receive 10 progress
 If a user ranked -8 completes an activity ranked -6 they will receive 40 progress
