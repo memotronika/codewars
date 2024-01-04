@@ -172,4 +172,14 @@ def filter_list(l):
         if type(i)==int:
             list.append(i)
     return list        
-     
+
+# If you can't beat 'em, join 'em!
+def cant_beat_so_join(numbers):
+    for _ in range(len(numbers)):
+        for i in range(len(numbers)):
+            if i==len(numbers)-1:pass
+            else:
+                if sum(numbers[i]) < sum(numbers[i+1]):
+                    numbers[i],numbers[i+1] = numbers[i+1], numbers[i]
+    numbers = [i for sub in numbers for i in sub]
+    return numbers
