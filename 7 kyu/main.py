@@ -183,3 +183,6 @@ def cant_beat_so_join(numbers):
                     numbers[i],numbers[i+1] = numbers[i+1], numbers[i]
     numbers = [i for sub in numbers for i in sub]
     return numbers
+
+def is_triangle(a, b, c):
+    return a>0 and b>0 and c>0 and a+b>c and a+c>b and c+b>a
