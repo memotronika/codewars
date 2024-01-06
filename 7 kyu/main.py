@@ -194,3 +194,7 @@ def calculate_years(principal, interest, tax, desired):
         years+=1
         principal = principal + principal * interest * (1-tax)
     return years
+    
+# Breaking chocolate problem
+def break_chocolate(n, m):
+    return (m-1)+(n-1)*m if n * m >= 2 else 0
