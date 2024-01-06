@@ -186,3 +186,11 @@ def cant_beat_so_join(numbers):
 # Is this a triangle?
 def is_triangle(a, b, c):
     return a>0 and b>0 and c>0 and a+b>c and a+c>b and c+b>a
+
+# Money, Money, Money
+def calculate_years(principal, interest, tax, desired):
+    years = 0
+    while principal < desired:
+        years+=1
+        principal = principal + principal * interest * (1-tax)
+    return years
