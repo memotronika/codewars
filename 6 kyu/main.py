@@ -226,3 +226,13 @@ def unique_in_order(iterable):
                 new_list.append(every)
     return new_list
 
+#Length of missing array
+def get_length_of_missing_array(array_of_arrays):
+    if array_of_arrays == [] or None in array_of_arrays or [] in array_of_arrays:return 0     
+    newarr=[]
+    for i in array_of_arrays:
+        newarr.append(len(i))
+    newarr.sort()
+    for i in range(len(newarr)):
+        if i == 0:pass
+        elif newarr[i]-newarr[i-1] != 1: return newarr[i]-1
