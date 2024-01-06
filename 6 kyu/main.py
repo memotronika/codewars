@@ -236,3 +236,18 @@ def get_length_of_missing_array(array_of_arrays):
     for i in range(len(newarr)):
         if i == 0:pass
         elif newarr[i]-newarr[i-1] != 1: return newarr[i]-1
+
+
+# Maximum Product of Parts
+def maximum_product_of_parts(number):
+    str_number = str(number)
+    length = len(str_number)
+    max_product = 0
+    for i in range(1, length - 1):
+        for j in range(i + 1, length):
+            part1 = int(str_number[:i])
+            part2 = int(str_number[i:j])
+            part3 = int(str_number[j:])
+            current_product = part1 * part2 * part3
+            max_product = max(max_product, current_product)
+    return max_product
