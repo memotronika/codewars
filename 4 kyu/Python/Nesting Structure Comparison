@@ -16,6 +16,8 @@ same_structure_as([ [ [ ], [ ] ] ], [ [ [ ], [ ] ] ] )
 # should return False
 same_structure_as([ [ [ ], [ ] ] ], [ [ 1, 1 ] ] )"""
 
+#https://www.codewars.com/kata/520446778469526ec0000001
+
 def same_structure_as(original,other):
     print(original,other)
     if type(original)!=type(other) or len(original)!=len(other): return False
