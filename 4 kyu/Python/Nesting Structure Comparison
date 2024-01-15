@@ -1,0 +1,12 @@
+def same_structure_as(original,other):
+    print(original,other)
+    if type(original)!=type(other) or len(original)!=len(other): return False
+   
+    for a,b in zip(original,other):
+         if type(a)!=type(b):
+            if type(a)==list or type(b)==list:
+                return False
+         if type(a) != list:pass
+         else :
+            return same_structure_as(a,b)
+    return True
