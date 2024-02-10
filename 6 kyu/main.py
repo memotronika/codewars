@@ -251,3 +251,8 @@ def maximum_product_of_parts(number):
             current_product = part1 * part2 * part3
             max_product = max(max_product, current_product)
     return max_product
+
+
+# Take a Ten Minutes Walk
+def is_valid_walk(walk):
+    return True if walk.count('e') == walk.count('w') and walk.count('n') == walk.count('s') and len(walk) == 10 else False  
